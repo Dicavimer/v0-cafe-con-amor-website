@@ -4,18 +4,18 @@ import { Hand, Sun, Flame, Shield, Heart } from "lucide-react"
 const steps = [
   {
     icon: Hand,
-    title: "Recoleccion Manual",
-    description: "Cada cereza de cafe es seleccionada a mano en su punto optimo de madurez, garantizando la mejor calidad.",
+    title: "Recolección Manual",
+    description: "Cada cereza de café es seleccionada a mano en su punto óptimo de madurez, garantizando la mejor calidad.",
   },
   {
     icon: Sun,
     title: "Secado Natural",
-    description: "Nuestros granos se secan al sol en camas africanas, desarrollando sabores complejos y autenticos.",
+    description: "Nuestros granos se secan al sol en camas africanas, desarrollando sabores complejos y auténticos.",
   },
   {
     icon: Flame,
-    title: "Tostion Artesanal",
-    description: "Cada lote se tuesta con precision en pequenas cantidades, resaltando las notas unicas de origen.",
+    title: "Tostión Artesanal",
+    description: "Cada lote se tuesta con precisión en pequeñas cantidades, resaltando las notas únicas de origen.",
   },
   {
     icon: Shield,
@@ -41,7 +41,7 @@ export default function ProcessSection() {
               {"Del campo a tu taza"}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              {"Un proceso cuidadoso que respeta la tradicion y garantiza la excelencia en cada grano."}
+              {"Un proceso cuidadoso que respeta la tradición y garantiza la excelencia en cada grano."}
             </p>
 
             {/* Steps */}
@@ -73,7 +73,7 @@ export default function ProcessSection() {
           <div className="relative aspect-[3/4] overflow-hidden rounded-2xl lg:aspect-[4/5]">
             <Image
               src="/images/coffee-process.jpg"
-              alt="Manos elegantes con granos de cafe"
+              alt="Manos elegantes con granos de café"
               fill
               className="object-cover"
             />

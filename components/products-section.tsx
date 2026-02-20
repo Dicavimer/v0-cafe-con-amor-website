@@ -5,25 +5,25 @@ import { ShoppingBag, Heart } from "lucide-react"
 
 const products = [
   {
-    name: "Cafe Tradicional",
-    description: "El clasico sabor colombiano. Notas a caramelo, chocolate y un cuerpo equilibrado que honra nuestras raices.",
+    name: "Café Tradicional",
+    description: "El clásico sabor colombiano. Notas a caramelo, chocolate y un cuerpo equilibrado que honra nuestras raíces.",
     price: "$28.000",
     image: "/images/cafe-tradicional.jpg",
-    badge: "Mas Vendido",
+    badge: "Más Vendido",
   },
   {
-    name: "Cafe Organico",
-    description: "Cultivado sin quimicos, en armonia con la naturaleza. Suave, limpio y con un perfil frutal unico.",
+    name: "Café Orgánico",
+    description: "Cultivado sin químicos, en armonía con la naturaleza. Suave, limpio y con un perfil frutal único.",
     price: "$35.000",
     image: "/images/cafe-organico.jpg",
-    badge: "Organico",
+    badge: "Orgánico",
   },
   {
     name: "Reserva Especial",
-    description: "Nuestra seleccion premium de micro-lotes. Complejidad aromatica excepcional, para verdaderas conocedoras.",
+    description: "Nuestra selección premium de micro-lotes. Complejidad aromática excepcional, para verdaderas conocedoras.",
     price: "$48.000",
     image: "/images/cafe-reserva.jpg",
-    badge: "Edicion Limitada",
+    badge: "Edición Limitada",
   },
 ]
 
@@ -41,10 +41,10 @@ export default function ProductsSection() {
             <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
           </div>
           <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            {"Cafe para cada momento"}
+            {"Café para cada momento"}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {"Tres expresiones de la misma pasion. Descubre el que habla a tu corazon."}
+            {"Tres expresiones de la misma pasión. Descubre el que habla a tu corazón."}
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function ProductsSection() {
                   </span>
                   <button className="flex items-center gap-2 rounded-full bg-rose-pink px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-rose-cream transition-all hover:bg-rose-gold hover:text-rose-dark hover:scale-105">
                     <ShoppingBag className="h-4 w-4" />
-                    {"Anadir"}
+                    {"Añadir"}
                   </button>
                 </div>
               </div>

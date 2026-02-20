@@ -17,8 +17,8 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Cafe con Amor | Cafe 100% Colombiano',
-  description: 'Cafe colombiano cultivado con fe y dedicacion. El sabor que nace del corazon. Cafe tradicional, organico y reserva especial.',
+  title: 'Café con Amor | Café 100% Colombiano',
+  description: 'Café colombiano cultivado con fe y dedicación. El sabor que nace del corazón. Café tradicional, orgánico y reserva especial.',
   generator: 'v0.app',
   icons: {
     icon: [

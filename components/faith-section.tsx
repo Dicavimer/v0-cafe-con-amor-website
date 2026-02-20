@@ -7,7 +7,7 @@ export default function FaithSection() {
       {/* Background Image */}
       <Image
         src="/images/coffee-field-sunrise.jpg"
-        alt="Amanecer rosa sobre campos de cafe colombiano"
+        alt="Amanecer rosa sobre campos de café colombiano"
         fill
         className="object-cover"
       />
@@ -26,7 +26,7 @@ export default function FaithSection() {
           {"Bendecidos por la tierra colombiana"}
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-rose-cream/80 md:text-lg">
-          {"Cada grano que cultivamos es un regalo de Dios y de esta tierra generosa. Trabajamos con gratitud, sabiendo que la bendicion del campo colombiano fluye a traves de cada taza que compartimos con ustedes."}
+          {"Cada grano que cultivamos es un regalo de Dios y de esta tierra generosa. Trabajamos con gratitud, sabiendo que la bendición del campo colombiano fluye a través de cada taza que compartimos con ustedes."}
         </p>
 
         {/* Decorative Divider */}
@@ -39,7 +39,7 @@ export default function FaithSection() {
         {/* Bible Verse */}
         <blockquote className="mt-10">
           <p className="font-serif text-xl italic text-rose-cream md:text-2xl lg:text-3xl">
-            {'"Bendecire el fruto de tu tierra."'}
+            {'"Bendeciré el fruto de tu tierra."'}
           </p>
           <cite className="mt-4 block text-sm font-bold not-italic tracking-wider text-rose-gold">
             {"— Deuteronomio 28:4"}

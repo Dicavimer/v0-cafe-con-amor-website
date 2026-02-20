@@ -63,13 +63,13 @@ const revenueData = [
 
 const productDistribution = [
   { name: "Tradicional", value: 2368, price: "$28.000" },
-  { name: "Organico", value: 1738, price: "$35.000" },
+  { name: "Orgánico", value: 1738, price: "$35.000" },
   { name: "Reserva", value: 968, price: "$48.000" },
 ]
 
 const priceComparison = [
-  { name: "Cafe Tradicional", precio: 28000, mercado: 32000 },
-  { name: "Cafe Organico", precio: 35000, mercado: 42000 },
+  { name: "Café Tradicional", precio: 28000, mercado: 32000 },
+  { name: "Café Orgánico", precio: 35000, mercado: 42000 },
   { name: "Reserva Especial", precio: 48000, mercado: 58000 },
 ]
 
@@ -122,15 +122,15 @@ export default function AnalyticsSection() {
           <div className="mb-3 flex items-center justify-center gap-2">
             <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-rose-pink">
-              {"Nuestros Numeros"}
+              {"Nuestros Números"}
             </p>
             <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
           </div>
           <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            {"Analisis de Ventas y Precios"}
+            {"Análisis de Ventas y Precios"}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {"Un vistazo al crecimiento de Cafe con Amor durante el ultimo ano. Cada taza cuenta una historia de confianza."}
+            {"Un vistazo al crecimiento de Café con Amor durante el último año. Cada taza cuenta una historia de confianza."}
           </p>
         </div>
 
@@ -140,19 +140,19 @@ export default function AnalyticsSection() {
             icon={Package}
             label="Unidades Vendidas"
             value="5,074"
-            change="+24% vs. ano anterior"
+            change="+24% vs. año anterior"
           />
           <KpiCard
             icon={DollarSign}
             label="Ingresos Anuales"
             value="$143.8M"
-            change="+31% vs. ano anterior"
+            change="+31% vs. año anterior"
           />
           <KpiCard
             icon={Users}
             label="Clientas Activas"
             value="1,820"
-            change="+18% vs. ano anterior"
+            change="+18% vs. año anterior"
           />
           <KpiCard
             icon={TrendingUp}
@@ -178,7 +178,7 @@ export default function AnalyticsSection() {
               <ChartContainer
                 config={{
                   tradicional: { label: "Tradicional", color: ROSE_PINK },
-                  organico: { label: "Organico", color: ROSE_GOLD },
+                  organico: { label: "Orgánico", color: ROSE_GOLD },
                   reserva: { label: "Reserva", color: MAUVE },
                 }}
                 className="h-[300px] w-full"
@@ -190,7 +190,7 @@ export default function AnalyticsSection() {
                     <YAxis tick={{ fill: MAUVE, fontSize: 12 }} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Bar dataKey="tradicional" fill={ROSE_PINK} radius={[4, 4, 0, 0]} name="Tradicional" />
-                    <Bar dataKey="organico" fill={ROSE_GOLD} radius={[4, 4, 0, 0]} name="Organico" />
+                    <Bar dataKey="organico" fill={ROSE_GOLD} radius={[4, 4, 0, 0]} name="Orgánico" />
                     <Bar dataKey="reserva" fill={MAUVE} radius={[4, 4, 0, 0]} name="Reserva" />
                   </BarChart>
                 </ResponsiveContainer>
@@ -248,10 +248,10 @@ export default function AnalyticsSection() {
           <Card className="border-rose-light bg-card">
             <CardHeader>
               <CardTitle className="font-serif text-lg text-foreground">
-                Distribucion de Ventas
+                Distribución de Ventas
               </CardTitle>
               <CardDescription className="text-muted-foreground">
-                Participacion por producto — Total: 5,074 unidades
+                Participación por producto — Total: 5,074 unidades
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -259,7 +259,7 @@ export default function AnalyticsSection() {
                 <ChartContainer
                   config={{
                     Tradicional: { label: "Tradicional", color: ROSE_PINK },
-                    Organico: { label: "Organico", color: ROSE_GOLD },
+                    Orgánico: { label: "Orgánico", color: ROSE_GOLD },
                     Reserva: { label: "Reserva", color: MAUVE },
                   }}
                   className="h-[250px] w-[250px]"
@@ -310,7 +310,7 @@ export default function AnalyticsSection() {
           <Card className="border-rose-light bg-card">
             <CardHeader>
               <CardTitle className="font-serif text-lg text-foreground">
-                Comparacion de Precios
+                Comparación de Precios
               </CardTitle>
               <CardDescription className="text-muted-foreground">
                 Nuestro precio vs. promedio del mercado (COP)
@@ -319,7 +319,7 @@ export default function AnalyticsSection() {
             <CardContent>
               <ChartContainer
                 config={{
-                  precio: { label: "Cafe con Amor", color: ROSE_PINK },
+                  precio: { label: "Café con Amor", color: ROSE_PINK },
                   mercado: { label: "Promedio Mercado", color: ROSE_LIGHT },
                 }}
                 className="h-[250px] w-full"
@@ -339,7 +339,7 @@ export default function AnalyticsSection() {
                       width={110}
                     />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="precio" fill={ROSE_PINK} radius={[0, 4, 4, 0]} name="Cafe con Amor" />
+                    <Bar dataKey="precio" fill={ROSE_PINK} radius={[0, 4, 4, 0]} name="Café con Amor" />
                     <Bar dataKey="mercado" fill={ROSE_LIGHT} radius={[0, 4, 4, 0]} name="Promedio Mercado" />
                   </BarChart>
                 </ResponsiveContainer>
@@ -373,14 +373,14 @@ export default function AnalyticsSection() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-rose-light/50 transition-colors hover:bg-blush/30">
-                      <td className="px-6 py-4 font-medium text-foreground">Cafe Tradicional</td>
+                      <td className="px-6 py-4 font-medium text-foreground">Café Tradicional</td>
                       <td className="px-6 py-4 text-muted-foreground">$28.000</td>
                       <td className="px-6 py-4 text-muted-foreground">$78.000</td>
                       <td className="px-6 py-4 text-muted-foreground">$148.000</td>
                       <td className="px-6 py-4 font-semibold text-rose-pink">-12%</td>
                     </tr>
                     <tr className="border-b border-rose-light/50 transition-colors hover:bg-blush/30">
-                      <td className="px-6 py-4 font-medium text-foreground">Cafe Organico</td>
+                      <td className="px-6 py-4 font-medium text-foreground">Café Orgánico</td>
                       <td className="px-6 py-4 text-muted-foreground">$35.000</td>
                       <td className="px-6 py-4 text-muted-foreground">$98.000</td>
                       <td className="px-6 py-4 text-muted-foreground">$185.000</td>

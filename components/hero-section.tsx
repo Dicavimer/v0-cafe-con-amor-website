@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <Image
         src="/images/hero-coffee.jpg"
-        alt="Cafe estetico con flores y decoracion femenina"
+        alt="Café estético con flores y decoración femenina"
         fill
         className="object-cover"
         priority
@@ -21,10 +21,10 @@ export default function HeroSection() {
           {"100% Colombiano"}
         </span>
         <h1 className="font-serif text-4xl font-bold leading-tight text-rose-cream sm:text-5xl md:text-6xl lg:text-7xl">
-          {"El sabor que nace del corazon"}
+          {"El sabor que nace del corazón"}
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-rose-cream/85 md:text-lg">
-          {"Cafe 100% colombiano cultivado con fe, amor y dedicacion."}
+          {"Café 100% colombiano cultivado con fe, amor y dedicación."}
         </p>
 
         {/* CTA Button */}
@@ -32,13 +32,13 @@ export default function HeroSection() {
           href="#productos"
           className="mt-10 inline-block rounded-full bg-rose-pink px-10 py-4 text-sm font-bold uppercase tracking-widest text-rose-cream transition-all hover:scale-105 hover:bg-rose-gold hover:text-rose-dark"
         >
-          {"Descubre Nuestro Cafe"}
+          {"Descubre Nuestro Café"}
         </a>
 
         {/* Bible Verse */}
         <blockquote className="mx-auto mt-12 max-w-xl border-t border-rose-cream/20 pt-8 text-center">
           <p className="font-serif text-lg italic leading-relaxed text-rose-cream/80 md:text-xl">
-            {'"Encomienda a Jehova tus obras, y tus pensamientos seran afirmados."'}
+            {'"Encomienda a Jehová tus obras, y tus pensamientos serán afirmados."'}
           </p>
           <cite className="mt-3 block text-sm font-semibold uppercase tracking-widest not-italic text-rose-gold">
             {"— Proverbios 16:3"}

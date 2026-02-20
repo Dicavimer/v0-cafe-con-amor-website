@@ -6,26 +6,26 @@ import { ChevronLeft, ChevronRight, Star, Heart } from "lucide-react"
 const testimonials = [
   {
     name: "Maria Fernanda Lopez",
-    location: "Bogota, Colombia",
-    text: "Desde que descubri Cafe con Amor, no puedo tomar otro cafe. El sabor es increible y saber que apoya familias cafeteras me llena el corazon.",
+    location: "Bogotá, Colombia",
+    text: "Desde que descubrí Café con Amor, no puedo tomar otro café. El sabor es increíble y saber que apoya familias cafeteras me llena el corazón.",
     rating: 5,
   },
   {
-    name: "Valentina Mejia",
-    location: "Medellin, Colombia",
-    text: "La Reserva Especial es simplemente excepcional. Cada taza es una experiencia unica. Se nota el amor y la dedicacion en cada sorbo.",
+    name: "Valentina Mejía",
+    location: "Medellín, Colombia",
+    text: "La Reserva Especial es simplemente excepcional. Cada taza es una experiencia única. Se nota el amor y la dedicación en cada sorbo.",
     rating: 5,
   },
   {
-    name: "Ana Patricia Rios",
+    name: "Ana Patricia Ríos",
     location: "Cali, Colombia",
-    text: "El cafe organico es mi favorito. Puro, limpio y con un sabor que me transporta a las montanas del Quindio. Bendiciones para esta familia.",
+    text: "El café orgánico es mi favorito. Puro, limpio y con un sabor que me transporta a las montañas del Quindío. Bendiciones para esta familia.",
     rating: 5,
   },
   {
-    name: "Camila Sanchez",
+    name: "Camila Sánchez",
     location: "Pereira, Colombia",
-    text: "Probe muchas marcas, pero ninguna como Cafe con Amor. La calidad es constante y el empaque es precioso. Un regalo perfecto.",
+    text: "Probé muchas marcas, pero ninguna como Café con Amor. La calidad es constante y el empaque es precioso. Un regalo perfecto.",
     rating: 5,
   },
 ]

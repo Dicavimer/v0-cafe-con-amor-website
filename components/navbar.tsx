@@ -24,7 +24,7 @@ export default function Navbar() {
           <a href="#inicio" className="flex items-center gap-2.5">
             <Heart className="h-6 w-6 fill-rose-pink text-rose-pink" />
             <span className="font-serif text-xl font-bold tracking-wide text-rose-dark lg:text-2xl">
-              {"Cafe con Amor"}
+              {"Café con Amor"}
             </span>
           </a>
 
@@ -52,7 +52,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-mauve transition-colors hover:text-rose-pink lg:hidden"
-              aria-label={isOpen ? "Cerrar menu" : "Abrir menu"}
+              aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>

@@ -10,11 +10,11 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Heart className="h-6 w-6 fill-rose-pink text-rose-pink" />
               <span className="font-serif text-xl font-bold tracking-wide">
-                {"Cafe con Amor"}
+                {"Café con Amor"}
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-rose-cream/60">
-              {"Cafe colombiano cultivado con fe y dedicacion. Cada taza lleva el amor de nuestras montanas."}
+              {"Café colombiano cultivado con fe y dedicación. Cada taza lleva el amor de nuestras montañas."}
             </p>
             {/* Social Icons */}
             <div className="mt-6 flex items-center gap-3">
@@ -45,7 +45,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-rose-pink">
-              {"Navegacion"}
+              {"Navegación"}
             </h3>
             <ul className="mt-4 space-y-3">
               {[
@@ -74,8 +74,8 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3">
               {[
-                "Cafe Tradicional",
-                "Cafe Organico",
+                "Café Tradicional",
+                "Café Orgánico",
                 "Reserva Especial",
                 "Suscripciones",
                 "Regalos",
@@ -101,7 +101,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-rose-pink" />
                 <span className="text-sm text-rose-cream/60">
-                  {"Eje Cafetero, Quindio, Colombia"}
+                  {"Eje Cafetero, Quindío, Colombia"}
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -125,12 +125,12 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
             <div className="flex items-center gap-2">
               <p className="font-serif text-base italic text-rose-cream/50">
-                {"Cafe con proposito, cafe con amor"}
+                {"Café con propósito, café con amor"}
               </p>
               <Heart className="h-3 w-3 fill-rose-pink text-rose-pink" />
             </div>
             <p className="text-xs text-rose-cream/40">
-              {`© ${new Date().getFullYear()} Cafe con Amor. Todos los derechos reservados.`}
+              {`© ${new Date().getFullYear()} Café con Amor. Todos los derechos reservados.`}
             </p>
           </div>
         </div>
