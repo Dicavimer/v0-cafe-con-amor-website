@@ -4,58 +4,62 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Café con Amor - Warm Colombian Coffee Theme */
-  --background: oklch(0.97 0.008 75);       /* warm cream */
-  --foreground: oklch(0.25 0.04 50);         /* dark coffee brown */
-  --card: oklch(0.99 0.005 75);              /* light cream card */
-  --card-foreground: oklch(0.25 0.04 50);    /* dark coffee */
-  --popover: oklch(0.99 0.005 75);
-  --popover-foreground: oklch(0.25 0.04 50);
-  --primary: oklch(0.35 0.08 55);            /* rich dark brown */
-  --primary-foreground: oklch(0.97 0.008 75);/* cream */
-  --secondary: oklch(0.92 0.015 80);         /* warm beige */
-  --secondary-foreground: oklch(0.30 0.06 50);
-  --muted: oklch(0.93 0.012 80);             /* muted beige */
-  --muted-foreground: oklch(0.50 0.03 50);
-  --accent: oklch(0.72 0.12 90);             /* warm gold */
-  --accent-foreground: oklch(0.25 0.04 50);
+  /* Cafe con Amor - Feminine Rose & Pink Theme */
+  --background: oklch(0.97 0.01 350);        /* soft blush white */
+  --foreground: oklch(0.30 0.04 350);        /* deep rose-brown */
+  --card: oklch(0.99 0.006 350);             /* lightest pink card */
+  --card-foreground: oklch(0.30 0.04 350);
+  --popover: oklch(0.99 0.006 350);
+  --popover-foreground: oklch(0.30 0.04 350);
+  --primary: oklch(0.65 0.15 350);           /* rose pink */
+  --primary-foreground: oklch(0.99 0.005 350);/* white-pink */
+  --secondary: oklch(0.94 0.02 350);         /* soft blush */
+  --secondary-foreground: oklch(0.35 0.05 350);
+  --muted: oklch(0.95 0.015 350);            /* muted pink */
+  --muted-foreground: oklch(0.52 0.03 350);
+  --accent: oklch(0.78 0.10 75);             /* rose gold */
+  --accent-foreground: oklch(0.30 0.04 350);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.02 75);
-  --input: oklch(0.90 0.015 75);
-  --ring: oklch(0.55 0.10 90);               /* gold ring */
-  --chart-1: oklch(0.35 0.08 55);
-  --chart-2: oklch(0.50 0.12 145);
-  --chart-3: oklch(0.72 0.12 90);
-  --chart-4: oklch(0.45 0.06 50);
-  --chart-5: oklch(0.60 0.08 70);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.97 0.008 75);
-  --sidebar-foreground: oklch(0.25 0.04 50);
-  --sidebar-primary: oklch(0.35 0.08 55);
-  --sidebar-primary-foreground: oklch(0.97 0.008 75);
-  --sidebar-accent: oklch(0.92 0.015 80);
-  --sidebar-accent-foreground: oklch(0.30 0.06 50);
-  --sidebar-border: oklch(0.88 0.02 75);
-  --sidebar-ring: oklch(0.55 0.10 90);
+  --border: oklch(0.90 0.025 350);
+  --input: oklch(0.92 0.02 350);
+  --ring: oklch(0.65 0.15 350);
+  --chart-1: oklch(0.65 0.15 350);
+  --chart-2: oklch(0.70 0.12 10);
+  --chart-3: oklch(0.78 0.10 75);
+  --chart-4: oklch(0.55 0.10 340);
+  --chart-5: oklch(0.60 0.08 20);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.97 0.01 350);
+  --sidebar-foreground: oklch(0.30 0.04 350);
+  --sidebar-primary: oklch(0.65 0.15 350);
+  --sidebar-primary-foreground: oklch(0.99 0.005 350);
+  --sidebar-accent: oklch(0.94 0.02 350);
+  --sidebar-accent-foreground: oklch(0.35 0.05 350);
+  --sidebar-border: oklch(0.90 0.025 350);
+  --sidebar-ring: oklch(0.65 0.15 350);
 
   /* Custom brand tokens */
-  --coffee-green: oklch(0.50 0.12 145);
-  --coffee-gold: oklch(0.72 0.12 90);
-  --coffee-dark: oklch(0.25 0.04 50);
-  --coffee-cream: oklch(0.95 0.01 75);
-  --coffee-brown: oklch(0.35 0.08 55);
+  --rose-pink: oklch(0.65 0.15 350);
+  --rose-light: oklch(0.90 0.05 350);
+  --rose-dark: oklch(0.30 0.06 350);
+  --rose-cream: oklch(0.97 0.01 350);
+  --rose-gold: oklch(0.78 0.10 75);
+  --blush: oklch(0.94 0.03 350);
+  --mauve: oklch(0.50 0.08 340);
 }
 
 @theme inline {
   --font-sans: var(--font-lato), 'Lato', sans-serif;
   --font-serif: var(--font-playfair), 'Playfair Display', Georgia, serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --color-coffee-green: var(--coffee-green);
-  --color-coffee-gold: var(--coffee-gold);
-  --color-coffee-dark: var(--coffee-dark);
-  --color-coffee-cream: var(--coffee-cream);
-  --color-coffee-brown: var(--coffee-brown);
+  --color-rose-pink: var(--rose-pink);
+  --color-rose-light: var(--rose-light);
+  --color-rose-dark: var(--rose-dark);
+  --color-rose-cream: var(--rose-cream);
+  --color-rose-gold: var(--rose-gold);
+  --color-blush: var(--blush);
+  --color-mauve: var(--mauve);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ShoppingCart } from "lucide-react"
+import { ShoppingBag, Heart } from "lucide-react"
 
 const products = [
   {
@@ -20,7 +20,7 @@ const products = [
   },
   {
     name: "Reserva Especial",
-    description: "Nuestra seleccion premium de micro-lotes. Complejidad aromatica excepcional, para los verdaderos conocedores.",
+    description: "Nuestra seleccion premium de micro-lotes. Complejidad aromatica excepcional, para verdaderas conocedoras.",
     price: "$48.000",
     image: "/images/cafe-reserva.jpg",
     badge: "Edicion Limitada",
@@ -29,13 +29,17 @@ const products = [
 
 export default function ProductsSection() {
   return (
-    <section id="productos" className="bg-secondary py-20 lg:py-32">
+    <section id="productos" className="bg-blush py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-coffee-gold">
-            {"Nuestros Productos"}
-          </p>
+          <div className="mb-3 flex items-center justify-center gap-2">
+            <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-rose-pink">
+              {"Nuestros Productos"}
+            </p>
+            <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
+          </div>
           <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
             {"Cafe para cada momento"}
           </h2>
@@ -49,7 +53,7 @@ export default function ProductsSection() {
           {products.map((product) => (
             <div
               key={product.name}
-              className="group overflow-hidden rounded-sm bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group overflow-hidden rounded-2xl bg-card border border-rose-light transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-rose-pink/10"
             >
               {/* Product Image */}
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -59,7 +63,7 @@ export default function ProductsSection() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <span className="absolute left-4 top-4 rounded-sm bg-coffee-dark/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-coffee-gold">
+                <span className="absolute left-4 top-4 rounded-full bg-rose-pink/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-rose-cream">
                   {product.badge}
                 </span>
               </div>
@@ -73,11 +77,11 @@ export default function ProductsSection() {
                   {product.description}
                 </p>
                 <div className="mt-6 flex items-center justify-between">
-                  <span className="font-serif text-2xl font-bold text-coffee-brown">
+                  <span className="font-serif text-2xl font-bold text-rose-pink">
                     {product.price}
                   </span>
-                  <button className="flex items-center gap-2 rounded-sm bg-primary px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-primary-foreground transition-colors hover:bg-coffee-gold hover:text-coffee-dark">
-                    <ShoppingCart className="h-4 w-4" />
+                  <button className="flex items-center gap-2 rounded-full bg-rose-pink px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-rose-cream transition-all hover:bg-rose-gold hover:text-rose-dark hover:scale-105">
+                    <ShoppingBag className="h-4 w-4" />
                     {"Anadir"}
                   </button>
                 </div>

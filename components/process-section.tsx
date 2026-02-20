@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Hand, Sun, Flame, Shield } from "lucide-react"
+import { Hand, Sun, Flame, Shield, Heart } from "lucide-react"
 
 const steps = [
   {
@@ -31,9 +31,12 @@ export default function ProcessSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Content */}
           <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-coffee-gold">
-              {"Nuestro Proceso"}
-            </p>
+            <div className="mb-3 flex items-center gap-2">
+              <Heart className="h-4 w-4 fill-rose-pink text-rose-pink" />
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-rose-pink">
+                {"Nuestro Proceso"}
+              </p>
+            </div>
             <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
               {"Del campo a tu taza"}
             </h2>
@@ -45,12 +48,12 @@ export default function ProcessSection() {
             <div className="mt-10 space-y-8">
               {steps.map((step, index) => (
                 <div key={step.title} className="flex gap-5">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-coffee-dark text-coffee-gold">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-rose-light text-rose-pink">
                     <step.icon className="h-6 w-6" />
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-bold text-coffee-gold">
+                      <span className="text-xs font-bold text-rose-gold">
                         {`0${index + 1}`}
                       </span>
                       <h3 className="font-serif text-lg font-bold text-foreground">
@@ -67,14 +70,14 @@ export default function ProcessSection() {
           </div>
 
           {/* Image */}
-          <div className="relative aspect-[3/4] overflow-hidden rounded-sm lg:aspect-[4/5]">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl lg:aspect-[4/5]">
             <Image
               src="/images/coffee-process.jpg"
-              alt="Proceso de tostado artesanal de cafe"
+              alt="Manos elegantes con granos de cafe"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 rounded-sm ring-1 ring-inset ring-coffee-dark/10" />
+            <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-rose-pink/10" />
           </div>
         </div>
       </div>
