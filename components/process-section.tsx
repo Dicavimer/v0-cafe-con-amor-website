@@ -1,0 +1,83 @@
+import Image from "next/image"
+import { Hand, Sun, Flame, Shield } from "lucide-react"
+
+const steps = [
+  {
+    icon: Hand,
+    title: "Recoleccion Manual",
+    description: "Cada cereza de cafe es seleccionada a mano en su punto optimo de madurez, garantizando la mejor calidad.",
+  },
+  {
+    icon: Sun,
+    title: "Secado Natural",
+    description: "Nuestros granos se secan al sol en camas africanas, desarrollando sabores complejos y autenticos.",
+  },
+  {
+    icon: Flame,
+    title: "Tostion Artesanal",
+    description: "Cada lote se tuesta con precision en pequenas cantidades, resaltando las notas unicas de origen.",
+  },
+  {
+    icon: Shield,
+    title: "Control de Calidad",
+    description: "Catadores expertos prueban cada lote para asegurar que solo lo mejor llega a tu taza.",
+  },
+]
+
+export default function ProcessSection() {
+  return (
+    <section id="proceso" className="bg-background py-20 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          {/* Content */}
+          <div>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-coffee-gold">
+              {"Nuestro Proceso"}
+            </p>
+            <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+              {"Del campo a tu taza"}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              {"Un proceso cuidadoso que respeta la tradicion y garantiza la excelencia en cada grano."}
+            </p>
+
+            {/* Steps */}
+            <div className="mt-10 space-y-8">
+              {steps.map((step, index) => (
+                <div key={step.title} className="flex gap-5">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-coffee-dark text-coffee-gold">
+                    <step.icon className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-bold text-coffee-gold">
+                        {`0${index + 1}`}
+                      </span>
+                      <h3 className="font-serif text-lg font-bold text-foreground">
+                        {step.title}
+                      </h3>
+                    </div>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="relative aspect-[3/4] overflow-hidden rounded-sm lg:aspect-[4/5]">
+            <Image
+              src="/images/coffee-process.jpg"
+              alt="Proceso de tostado artesanal de cafe"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 rounded-sm ring-1 ring-inset ring-coffee-dark/10" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
