@@ -16,10 +16,10 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-rose-dark/40" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-        <p className="mb-6 mt-8 text-sm font-medium uppercase tracking-[0.3em] text-rose-gold md:mt-12 md:text-base">
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-4 pt-24 text-center lg:pt-28">
+        <span className="mb-8 inline-flex items-center rounded-full bg-rose-dark/50 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-rose-cream shadow-lg ring-1 ring-rose-cream/15 backdrop-blur-sm sm:px-8 sm:py-2.5 sm:text-sm md:text-base">
           {"100% Colombiano"}
-        </p>
+        </span>
         <h1 className="font-serif text-4xl font-bold leading-tight text-rose-cream sm:text-5xl md:text-6xl lg:text-7xl">
           {"El sabor que nace del corazon"}
         </h1>
