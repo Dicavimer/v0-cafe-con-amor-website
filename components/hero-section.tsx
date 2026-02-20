@@ -17,7 +17,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-rose-gold md:text-base">
+        <p className="mb-6 mt-8 text-sm font-medium uppercase tracking-[0.3em] text-rose-gold md:mt-12 md:text-base">
           {"100% Colombiano"}
         </p>
         <h1 className="font-serif text-4xl font-bold leading-tight text-rose-cream sm:text-5xl md:text-6xl lg:text-7xl">
@@ -36,12 +36,12 @@ export default function HeroSection() {
         </a>
 
         {/* Bible Verse */}
-        <blockquote className="mx-auto mt-12 max-w-lg border-t border-rose-cream/20 pt-8">
-          <p className="font-serif text-base italic text-rose-cream/70 md:text-lg">
-            {'"Probad y ved que el Senor es bueno."'}
+        <blockquote className="mx-auto mt-12 max-w-xl border-t border-rose-cream/20 pt-8 text-center">
+          <p className="font-serif text-lg italic leading-relaxed text-rose-cream/80 md:text-xl">
+            {'"Encomienda a Jehova tus obras, y tus pensamientos seran afirmados."'}
           </p>
-          <cite className="mt-2 block text-sm font-medium not-italic text-rose-gold/80">
-            {"— Salmo 34:8"}
+          <cite className="mt-3 block text-sm font-semibold uppercase tracking-widest not-italic text-rose-gold">
+            {"— Proverbios 16:3"}
           </cite>
         </blockquote>
       </div>
